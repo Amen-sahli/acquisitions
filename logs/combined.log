@@ -70,3 +70,35 @@
 {"level":"info","message":"::1 - - [02/Aug/2026:14:21:30 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T14:21:30.670Z"}
 {"level":"info","message":"User signed out successfully","service":"acquisitions-api","timestamp":"2026-08-02T14:21:32.960Z"}
 {"level":"info","message":"::1 - - [02/Aug/2026:14:21:32 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T14:21:32.961Z"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:12 +0000] \"POST /health HTTP/1.1\" 404 146 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:12.310Z"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:20 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:20.540Z"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:33 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:33.906Z"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:34 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:34.648Z"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:35 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:35.097Z"}
+{"ip":"::1","level":"warn","message":"Rate limit request blocked","path":"/health","service":"acquisitions-api","timestamp":"2026-08-02T15:18:35.859Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:35 +0000] \"GET /health HTTP/1.1\" 429 87 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:35.862Z"}
+{"ip":"::1","level":"warn","message":"Rate limit request blocked","path":"/health","service":"acquisitions-api","timestamp":"2026-08-02T15:18:36.267Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:36 +0000] \"GET /health HTTP/1.1\" 429 87 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:36.269Z"}
+{"ip":"::1","level":"warn","message":"Rate limit request blocked","path":"/health","service":"acquisitions-api","timestamp":"2026-08-02T15:18:36.783Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:36 +0000] \"GET /health HTTP/1.1\" 429 87 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:36.785Z"}
+{"ip":"::1","level":"warn","message":"Rate limit request blocked","path":"/health","service":"acquisitions-api","timestamp":"2026-08-02T15:18:37.423Z","userAgent":"HTTPie"}
+{"level":"info","message":"::1 - - [02/Aug/2026:15:18:37 +0000] \"GET /health HTTP/1.1\" 429 87 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-02T15:18:37.425Z"}
+{"level":"info","message":"User testuser@example.com created successfully","service":"acquisitions-api","timestamp":"2026-08-03T17:39:49.402Z"}
+{"level":"info","message":"User registered successfully: testuser@example.com","service":"acquisitions-api","timestamp":"2026-08-03T17:39:49.408Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:39:49 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 122 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.8972\"","service":"acquisitions-api","timestamp":"2026-08-03T17:39:49.414Z"}
+{"level":"info","message":"User testuser@example.com authenticated successfully","service":"acquisitions-api","timestamp":"2026-08-03T17:39:56.652Z"}
+{"level":"info","message":"User signed in successfully: testuser@example.com","service":"acquisitions-api","timestamp":"2026-08-03T17:39:56.654Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:39:56 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 121 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.8972\"","service":"acquisitions-api","timestamp":"2026-08-03T17:39:56.655Z"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api","timestamp":"2026-08-03T17:39:56.921Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:39:56 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.8972\"","service":"acquisitions-api","timestamp":"2026-08-03T17:39:56.922Z"}
+{"level":"info","message":"Hello, from acquisitions!","service":"acquisitions-api","timestamp":"2026-08-03T17:43:35.336Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:43:35 +0000] \"GET / HTTP/1.1\" 200 25 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.129.1 Chrome/148.0.7778.280 Electron/42.6.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-08-03T17:43:35.352Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:43:35 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.129.1 Chrome/148.0.7778.280 Electron/42.6.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-08-03T17:43:35.739Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:43:40 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.129.1 Chrome/148.0.7778.280 Electron/42.6.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-08-03T17:43:40.741Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:46:50 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-03T17:46:50.405Z"}
+{"level":"info","message":"User adrian@gmail.com created successfully","service":"acquisitions-api","timestamp":"2026-08-03T17:48:37.835Z"}
+{"level":"info","message":"User registered successfully: adrian@gmail.com","service":"acquisitions-api","timestamp":"2026-08-03T17:48:37.842Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:17:48:37 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 115 \"-\" \"HTTPie\"","service":"acquisitions-api","timestamp":"2026-08-03T17:48:37.848Z"}
+{"level":"info","message":"Hello, from acquisitions!","service":"acquisitions-api","timestamp":"2026-08-03T22:25:35.534Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:22:25:35 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.129.1 Chrome/148.0.7778.280 Electron/42.6.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-08-03T22:25:35.541Z"}
+{"level":"info","message":"::ffff:172.18.0.1 - - [03/Aug/2026:22:25:42 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.129.1 Chrome/148.0.7778.280 Electron/42.6.0 Safari/537.36\"","service":"acquisitions-api","timestamp":"2026-08-03T22:25:42.368Z"}

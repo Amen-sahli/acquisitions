@@ -1,0 +1,27 @@
+name: acquisitions-dev
+
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: acquisitions-neon-local
+    env_file:
+      - .env.development
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: acquisitions-api
+    command: ["npm", "run", "dev"]
+    env_file:
+      - .env.development
+    environment:
+      NODE_ENV: development
+      DATABASE_URL: postgres://neon:npg@neon-local:5432/neondb
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - neon-local

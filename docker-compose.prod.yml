@@ -1,0 +1,14 @@
+name: acquisitions-prod
+
+services:
+  app:
+    build: .
+    container_name: acquisitions-api-prod
+    command: ["sh", "-c", "npm run db:migrate && npm start"]
+    env_file:
+      - .env.production
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
